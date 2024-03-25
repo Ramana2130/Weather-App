@@ -24,13 +24,13 @@ async function checkWeather(city: string): Promise<void> {
       data.wind.speed + " km/h";
 
     if (image !== null && data.weather[0].main == "Clouds") {
-      image.src = "./src/img/cloud.png";
+      image.src = "./img/cloud.png";
     } else if (image !== null && data.weather[0].main == "Clear") {
-      image.src = "./src/img/sun1.png";
+      image.src = "./img/sun1.png";
     } else if (image !== null && data.weather[0].main == "Drizzle") {
-      image.src = "./src/img/sun.png";
+      image.src = "./img/sun.png";
     } else if (image !== null && data.weather[0].main == "Mist") {
-      image.src = "./src/img/mizz.png";
+      image.src = "./img/mizz.png";
     }
   } catch (error) {
     console.error("An error occurred while fetching weather data:", error);
